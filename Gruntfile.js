@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin',
     buildcontrol: 'grunt-build-control'
   });
 
@@ -31,7 +31,6 @@ module.exports = function (grunt) {
 
     // Project settings
     config: config,
-    
     buildcontrol: {
       options: {
         dir: 'dist',
@@ -41,7 +40,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:junsup/personal_website.git',
+          remote: 'git@github.com:your_github_user/your_webapp.git',
           branch: 'gh-pages'
         }
       }
